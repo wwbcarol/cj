@@ -9,6 +9,8 @@ public class B {
     static String inputFile;
     static String outputFile;
     static String keyFile;
+    @SuppressWarnings("rawtypes")
+    static ArrayList[] links;
 
     private static void Name(String s) {
         inputFile = s + ".in";
@@ -16,12 +18,14 @@ public class B {
         keyFile = s + ".key";
     }
 
+    @SuppressWarnings({ "unchecked", "boxing" })
     public static void main(String[] args) throws FileNotFoundException {
 
-        String root = "data/CJ2014";
+        String root = "data/CJ2014/r1A";
 
         // Test
-        Name(TYPE + "-test");
+        // Name("B-large-practice");
+        Name("B-test");
 
         Scanner in = new Scanner(new File(root, inputFile));
         PrintWriter out = new PrintWriter(new File(root, outputFile));
@@ -30,17 +34,29 @@ public class B {
 
         for (int i = 0; i < T; i++) {
             int N = in.nextInt();
-            ArrayList<ArrayList<Integer>> links = new ArrayList<ArrayList<Integer>>(N);
-            HashMap<String, Boolean> map = new HashMap<String, Boolean>();
-            for (int j = 0; j < N - 1; j++) {
-                int Xi = in.nextInt();
-                int Yi = in.nextInt();
-                addLink(links, Xi, Yi);
-                addLink(links, Yi, Xi);
-                map.put(Xi + "-" + Yi, Boolean.TRUE);
-                map.put(Yi + "-" + Xi, Boolean.TRUE);
+            links = new ArrayList[N];
+            for (int j = 0; j < N; j++) {
+                links[j] = new ArrayList<Integer>();
             }
-            out.println("Case #" + (i + 1) + ": ");
+            for (int j = 0; j < N - 1; j++) {
+                int Xi = in.nextInt() - 1;
+                int Yi = in.nextInt() - 1;
+                links[Xi].add(Yi);
+                links[Yi].add(Xi);
+            }
+            int[][] dp = new int[N][N + 1];
+            for (int[] ar : dp) {
+                Arrays.fill(ar, -1);
+            }
+
+            int ans = N - 1;
+            for (int j = 0; j < N; j++) {
+                System.out.print(solve(dp, j, N) + " ");
+                ans = Math.min(ans, N - solve(dp, j, N));
+                System.out.println("--");
+            }
+
+            out.println("Case #" + (i + 1) + ": " + ans);
 
         }
 
@@ -51,15 +67,29 @@ public class B {
 
     }
 
-    private static void addLink(ArrayList<ArrayList<Integer>> links, int xi, int yi) {
-        ArrayList<Integer> link = links.get(xi - 1) == null ? new ArrayList<Integer>() : links.get(xi - 1);
-        link.add(Integer.valueOf(yi));
-        links.add(link);
-    }
+    @SuppressWarnings("unchecked")
+    private static int solve(int[][] dp, int j, int t) {
+        if (dp[j][t] == -1) {
+            int max1 = -1, max2 = -1;
+            for (int node : (ArrayList<Integer>)links[j]) {
+                if (node == t) {
+                    continue;
+                }
 
-    class Node {
-        int val;
-        Node next;
+                int res = solve(dp, node, j);
+                if (res > max1) {
+                    max2 = max1;
+                    max1 = res;
+                } else if (res > max2) {
+                    max2 = res;
+                }
+
+            }
+
+            dp[j][t] = max2 == -1 ? 1 : max1 + max2 + 1;
+        }
+
+        return dp[j][t];
     }
 
     public static List<String> check(String root) {

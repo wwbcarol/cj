@@ -23,13 +23,73 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "A-test.out",
+			"settings":
+			{
+				"buffer_size": 44,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "A-test.key",
+			"settings":
+			{
+				"buffer_size": 43,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Wenbin/Desktop/winger_0_0/GCJR1A.java",
+			"settings":
+			{
+				"buffer_size": 3631,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "B-test.out",
+			"settings":
+			{
+				"buffer_size": 33,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "B-test.key",
+			"settings":
+			{
+				"buffer_size": 32,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Wenbin/Desktop/winger_1_0/GCJR1B.java",
+			"settings":
+			{
+				"buffer_size": 3747,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "B-small-practice.in",
+			"settings":
+			{
+				"buffer_size": 6486,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 104.0,
+		"height": 357.0,
 		"selected_items":
 		[
+			[
+				"com",
+				"Compare with..."
+			],
 			[
 				"sql",
 				"SQL Beautifier: Format Current SQL File"
@@ -100,6 +160,10 @@
 	},
 	"file_history":
 	[
+		"/E/CarolCode/data/cj2014/r1A/B-small-practice.key",
+		"/E/CarolCode/data/cj2014/r1A/B-small-practice.out",
+		"/E/CarolCode/B-small-practice.keykey",
+		"/E/CarolCode/data/cj2014/r1A/r1A.sublime-project",
 		"/E/CarolCode/data/cj2014/r1A/A",
 		"/C/CSR-Client-201410/CompanyModule/SR/sr_kyuyorenkei/srKyuyoRenkeiClasses.pas",
 		"/C/CSR-Client-201410/CompanyModule/SR/sr_kyuyorenkei/srKyuyoRenkeiMain.pas",
@@ -199,6 +263,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rnd",
 			"GOOD",
 			"getGridObj",
 			"onDataLoaded",
@@ -325,8 +390,7 @@
 			"getData",
 			"getDataRow",
 			"getData",
-			"cws_calendar_maint_ikkatu_res1438",
-			"maxYM"
+			"cws_calendar_maint_ikkatu_res1438"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -344,8 +408,200 @@
 	"groups":
 	[
 		{
+			"selected": 6,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "A-test.out",
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "A-test.key",
+					"settings":
+					{
+						"buffer_size": 43,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Wenbin/Desktop/winger_0_0/GCJR1A.java",
+					"settings":
+					{
+						"buffer_size": 3631,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1706,
+								1706
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1188.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "B-test.out",
+					"settings":
+					{
+						"buffer_size": 33,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "B-test.key",
+					"settings":
+					{
+						"buffer_size": 32,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/Wenbin/Desktop/winger_1_0/GCJR1B.java",
+					"settings":
+					{
+						"buffer_size": 3747,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Java/Java.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "B-small-practice.in",
+					"settings":
+					{
+						"buffer_size": 6486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								74
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

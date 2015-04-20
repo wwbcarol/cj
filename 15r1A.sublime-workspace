@@ -23,6 +23,83 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "data/cj2015/r1A/A-test.in",
+			"settings":
+			{
+				"buffer_size": 246330,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/A-test.key",
+			"settings":
+			{
+				"buffer_size": 2377,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/B-test.in",
+			"settings":
+			{
+				"buffer_size": 501143,
+				"line_ending": "Windows",
+				"name": "3"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/B-test.out",
+			"settings":
+			{
+				"buffer_size": 1346,
+				"line_ending": "Windows",
+				"name": "Case #1: 1"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/B-test.key",
+			"settings":
+			{
+				"buffer_size": 1346,
+				"line_ending": "Windows",
+				"name": "Case #1: 1"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/C-test.in",
+			"settings":
+			{
+				"buffer_size": 71,
+				"line_ending": "Windows",
+				"name": "5"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/C-test.key",
+			"settings":
+			{
+				"buffer_size": 45,
+				"line_ending": "Windows",
+				"name": "Case #1:"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/C-test.out",
+			"settings":
+			{
+				"buffer_size": 46,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "data/cj2015/r1A/C-small-practice.out",
+			"settings":
+			{
+				"buffer_size": 3020,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -202,6 +279,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-",
 			"localhost",
 			"password=\"shuro\"",
 			"username=\"shuro\"",
@@ -328,8 +406,7 @@
 			"truncateDayType",
 			"beforePrepareUpdGrid",
 			"updGrid",
-			"prepareRowDataObj",
-			"_addRows"
+			"prepareRowDataObj"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -349,6 +426,258 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "data/cj2015/r1A/A-test.in",
+					"settings":
+					{
+						"buffer_size": 246330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246330,
+								246330
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 239639.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "data/cj2015/r1A/A-test.key",
+					"settings":
+					{
+						"buffer_size": 2377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2377,
+								2377
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2956.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "data/cj2015/r1A/B-test.in",
+					"settings":
+					{
+						"buffer_size": 501143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								501143,
+								501143
+							]
+						],
+						"settings":
+						{
+							"auto_name": "3",
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 467365.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "data/cj2015/r1A/B-test.out",
+					"settings":
+					{
+						"buffer_size": 1346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Case #1: 1",
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "data/cj2015/r1A/B-test.key",
+					"settings":
+					{
+						"buffer_size": 1346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								367
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Case #1: 1",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 481.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "data/cj2015/r1A/C-test.in",
+					"settings":
+					{
+						"buffer_size": 71,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"auto_name": "5",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "data/cj2015/r1A/C-test.key",
+					"settings":
+					{
+						"buffer_size": 45,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								45,
+								45
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Case #1:",
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "data/cj2015/r1A/C-test.out",
+					"settings":
+					{
+						"buffer_size": 46,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								33,
+								33
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "data/cj2015/r1A/C-small-practice.out",
+					"settings":
+					{
+						"buffer_size": 3020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								28
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

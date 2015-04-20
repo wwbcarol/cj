@@ -22,7 +22,8 @@ public class C {
         String root = "data/CJ2015/r1A";
 
         // Test
-        Name(TYPE + "-test");
+        // Name(TYPE + "-test");
+        Name("C-small-practice");
 
         Scanner in = new Scanner(new File(root, inputFile));
         PrintWriter out = new PrintWriter(new File(root, outputFile));
@@ -40,10 +41,18 @@ public class C {
             }
 
             int[] res = new int[N];
-            for (int j = 0; j < N; j++) {
-                Point p = ins.get(j);
-                res[j] = solve(ins, p);
+            Arrays.fill(res, N - 1);
+            for (int t = 0; t < N; t++) {
+                for (int j = 0; j < N; j++) {
+                    if (j != t) {
+                        int min = solve(t, j, ins);
+                        if (res[t] > min) {
+                            res[t] = min;
+                        }
+                    }
+                }
             }
+
             out.println("Case #" + (i + 1) + ":");
             for (int t = 0; t < N; t++) {
                 out.println(res[t]);
@@ -58,30 +67,23 @@ public class C {
 
     }
 
-    private static int solve(ArrayList<Point> ins, Point p1, Point p2) {
-
-        ArrayList<Point> leftSet = new ArrayList<Point>();
-        ArrayList<Point> rightSet = new ArrayList<Point>();
-
-        for (int i = 0; i < ins.size(); i++) {
-            Point p = ins.get(i);
-            if (pointLocation(A, B, p) == -1) {
-                leftSet.add(p);
-            } else if (pointLocation(A, B, p) == 1) {
-                rightSet.add(p);
+    private static int solve(int t, int j, ArrayList<Point> ins) {
+        Point p = ins.get(t);
+        Point q = ins.get(j);
+        int left = 0;
+        int right = 0;
+        for (int i = 0, len = ins.size(); i < len; i++) {
+            if (i != t && i != j) {
+                Point p0 = ins.get(i);
+                long val = (long)(p0.x - p.x) * (q.y - p.y) - (long)(p0.y - p.y) * (q.x - p.x);
+                if (val < 0) {
+                    left++;
+                } else if (val > 0) {
+                    right++;
+                }
             }
         }
-    }
-
-    public int pointLocation(Point A, Point B, Point P) {
-        int cp1 = (B.x - A.x) * (P.y - A.y) - (B.y - A.y) * (P.x - A.x);
-        if (cp1 > 0) {
-            return 1;
-        } else if (cp1 == 0) {
-            return 0;
-        } else {
-            return -1;
-        }
+        return Math.min(left, right);
     }
 
     public static ArrayList<String> check(String root) {

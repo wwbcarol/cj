@@ -49,16 +49,7 @@ public class A {
 
             int res2 = 0;
             System.out.println(i + 1 + ": " + rate);
-            // int sum = 0;
             for (int j = 0; j < N - 1; j++) {
-                // sum += m[j];
-                // if (sum >= rate) {
-                // sum = sum - rate;
-                // res2 += rate;
-                // } else {
-                // res2 += sum;
-                // sum = 0;
-                // }
                 if (m[j] > rate) {
                     res2 += rate;
                 } else {
